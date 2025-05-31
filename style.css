@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.score-board {
+    text-align: left;
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 120px;
+}
+
+.score-board p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.score-board span {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.next-piece {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.next-piece p {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+
+#nextCanvas {
+    border: 2px solid #555;
+    background-color: #111;
+}
+
+#gameCanvas {
+    border: 3px solid #555;
+    background-color: #111;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls p {
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#pauseBtn {
+    background-color: #ff9800;
+}
+
+#pauseBtn:hover {
+    background-color: #e68900;
+}
