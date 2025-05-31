@@ -157,8 +157,8 @@ class Tetris {
     
     rotate() {
         const rotated = this.currentPiece.shape[0].map((_, i) =>
-            this.currentPiece.shape.map(row => row[i]).reverse()
-        );
+            this.currentPiece.shape.map(row => row[row.length - 1 - i])
+        ).reverse();
         const previousShape = this.currentPiece.shape;
         this.currentPiece.shape = rotated;
         
